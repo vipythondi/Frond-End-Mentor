@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+.footer{
+    display: grid;
+    grid-template-rows: 120px 270px;
+    background: #FAFAFA;
+    font-family: 'Karla', sans-serif;
+    @media screen and (max-width: 376px){
+        display: grid;
+        grid-template-rows: 200px 825px;
+        grid-column: 374px;
+    }
+    &__title{
+        display: grid;
+        grid-template-columns: 720px 720px;
+        border-bottom: 1px solid #E1E1E1;
+        align-items: flex-end;
+        padding-bottom: 30px;
+        @media screen and (max-width: 376px){
+            display: grid;
+            grid-template-columns: 374px;
+            grid-template-rows: 110px 90px;
+        }
+        &__logo{
+            padding-left: 160px;
+            @media screen and (max-width: 376px){
+                display: grid;
+                justify-content: center;
+                padding-left: 0px;
+            }
+        }
+        &__icons{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 200px;
+            @media screen and (max-width: 376px){
+                display: flex;
+                padding-right: 120px;
+                margin-top: 30px;
+                align-self: flex-start;
+            }
+            img{
+                padding-left: 15px;
+            }
+        }
+    }
+    &__sections{
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        column-gap: 10px;
+        align-items: center;
+        padding-left: 160px;
+        @media screen and (max-width: 376px){
+            padding-left: 0px;
+            display: grid;
+            grid-template-columns: 374px;
+            grid-template-rows: 200px 200px 200px 200px;
+            align-items: center;
+            text-align: center;
+        }
+        &__one__title{
+            margin-bottom: 20px;
+            color: gray;
+            text-transform: uppercase;
+        }
+        &__one__items{
+            li{
+                list-style: none;
+                line-height: 1.6;
+                text-transform: uppercase;
+            }
+        }
+        &__two__title{
+            margin-bottom: 20px;
+            color: gray;
+            text-transform: uppercase;
+        }
+        &__two__items{
+            li{
+                list-style: none;
+                line-height: 1.6;
+                text-transform: uppercase;
+            }
+        }
+        &__third__title{
+            margin-bottom: 20px;
+            color: gray;
+            text-transform: uppercase;
+        }
+        &__third__items{
+            li{
+                list-style: none;
+                line-height: 1.6;
+                text-transform: uppercase;
+            }
+        }
+        &__four__title{
+            margin-bottom: 20px;
+            color: gray;
+            text-transform: uppercase;
+        }
+        &__four__items{
+            li{
+                list-style: none;
+                line-height: 1.6;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
