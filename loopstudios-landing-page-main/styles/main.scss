@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-wrapper{
+    border: 1px solid black;
+    max-width: 1440px;
+    display: grid;
+    grid-template-rows: 650px 2090px 160px;
+    margin: 0 auto;
+    @media all and (max-width: 376px) {
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 830px 2090px 600px;
+    }
+}

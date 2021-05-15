@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-wrapper {
+  border: 1px solid black;
+  max-width: 1440px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 650px 2090px 160px;
+      grid-template-rows: 650px 2090px 160px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 376px) {
+  .page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+    -ms-grid-rows: 830px 2090px 600px;
+        grid-template-rows: 830px 2090px 600px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

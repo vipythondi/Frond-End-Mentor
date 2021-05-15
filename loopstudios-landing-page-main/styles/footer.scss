@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+// font-family: 'Josefin Sans', sans-serif;
+
+.footer{
+    background: black;
+    display: grid;
+    grid-template-columns: 720px 720px;
+    font-family: 'Josefin Sans', sans-serif;
+    @media all and (max-width: 376px){
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 400px 200px;
+    }
+    &__first{
+        display: grid;
+        grid-template-rows: 80px 80px;
+        color: white;
+        margin-left: 160px;
+        @media all and (max-width: 376px){
+            display: grid;
+            grid-template-rows: 100px 300px;
+            margin-left: 0px;
+        }
+        &__logo{
+            display: grid;
+            align-items: flex-end;
+            @media all and (max-width: 376px){
+                display: grid;
+                justify-content: center;
+            }
+        }
+        &__navigation{
+            display: grid;
+            align-items: center;
+            @media all and (max-width: 376px){
+                display: grid;
+                justify-content: center;
+            }
+            ul{
+                display: flex;
+                justify-self: flex-start;
+                align-items: flex-end;
+                @media all and (max-width: 376px){
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2.5;
+                    font-size: 20px;
+                    align-items: center;
+                }
+                li{
+                    list-style: none;
+                    margin-right: 25px;
+                    @media all and (max-width: 376px){
+                        margin-right: 0px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    &__second{
+        display: grid;
+        grid-template-rows: 80px 80px;
+        color: white;
+        margin-right: 160px;
+        @media all and (max-width: 376px){
+            margin-right: 0px;
+            display: grid;
+            grid-template-rows: 100px 100px;
+        }
+        &__icons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            img{
+                margin-right: 10px;
+            }
+            @media all and (max-width: 376px){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__text{
+            display: grid;
+            justify-content: flex-end;
+            align-items: center;
+            @media all and (max-width: 376px){
+                display: grid;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+    }
+}

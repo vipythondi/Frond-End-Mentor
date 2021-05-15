@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+// font-family: 'Josefin Sans', sans-serif;
+.main{
+    display: grid;
+    grid-template-rows: 800px 150px 1140px;
+    font-family: 'Josefin Sans', sans-serif;
+    @media all and (max-width: 376px){
+        display: grid;
+        grid-template-rows: 690px 85px 1315px;
+    }
+    &__section_one{
+        display: flex;
+        @media all and (max-width: 376px){
+            display: flex;
+            flex-direction: column;
+        }
+        &__photo{
+            margin-top: 160px;
+            margin-left: 160px;
+            width: 730px;
+            height: 500px;
+            @media all and (max-width: 376px){
+                margin-left: 25px;
+                margin-top: 95px;
+                width: 325px;
+                height: 225px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &__box__container{
+            background-color: white;
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-top: 90px;
+            width: 540px;
+            height: 300px;
+            position: relative;
+            top: 360px;
+            right:160px;
+            @media all and (max-width: 376px){
+                width: 325px;
+                height: 280px;
+                top: 0px;
+                right: 0px;
+                padding: 10px;
+                margin-left: 25px;
+                margin-top: 40px;
+                text-align: center;
+            }
+            h1{
+                text-transform: uppercase;
+                margin-bottom: 35px;
+            }
+            p{
+                line-height: 1.4;
+            }
+        }
+    }
+    &__section_two{
+        display: grid;
+        grid-template-columns: 720px 720px;
+        @media all and (max-width: 376px){
+            display: grid;
+            grid-template-columns: 375px;
+        }
+        &__title{
+            display: grid;
+            align-items: center;
+            margin-left: 160px;
+            @media all and (max-width: 376px){
+                margin-left: 0px;
+                justify-self: center;
+            }
+            h1{
+                text-transform: uppercase;
+            }
+        }
+        &__button{
+            display: grid;
+            align-items: center;
+            justify-content: end;
+            margin-right: 160px;
+            @media all and (max-width: 376px){
+                display: none;
+            }
+            button{
+                width: 150px;
+                height: 35px;
+                text-transform: uppercase;
+                background-color: white;
+            }
+        }
+    }
+    .main__section_third{
+        display: grid;
+        grid-template-columns: 375px;
+        &__grids{
+            display: grid;
+            grid-template-columns: 260px 260px 260px 260px;
+            grid-template-rows: 450px 450px 450px 450px;
+            row-gap: 25px;
+            column-gap: 30px;
+            margin-left: 160px;
+            @media all and (max-width: 376px){
+                display: grid;
+                grid-template-columns: 325px;
+                grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
+                margin-left: 25px;
+            }
+            .earth{
+                background: url("/images/desktop/image-deep-earth.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-deep-earth.jpg") no-repeat ;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 20%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .arcade{
+                background: url("/images/desktop/image-night-arcade.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-night-arcade.jpg");
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 20%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .soccer{
+                background: url("/images/desktop/image-soccer-team.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-soccer-team.jpg") no-repeat;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 50%;
+                    color: white;
+                    text-transform: uppercase;
+                    @media all and (max-width: 376px){
+                        width: 40%;
+                    }
+                }
+            }
+            .grid{
+                background: url("/images/desktop/image-grid.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-grid.jpg") no-repeat;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 20%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .above{
+                background: url("/images/desktop/image-from-above.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-from-above.jpg") no-repeat;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 50%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .pocket{
+                background: url("/images/desktop/image-pocket-borealis.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-pocket-borealis.jpg") no-repeat;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 50%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .curiosity{
+                background: url("/images/desktop/image-curiosity.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-curiosity.jpg") no-repeat;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 30%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+            .fisheye{
+                background: url("/images/desktop/image-fisheye.jpg") no-repeat;
+                @media all and (max-width: 376px){
+                    background: url("/images/mobile/image-fisheye.jpg") no-repeat;
+                    background-size: 100%;
+                }
+                display: grid;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                padding-left: 40px;
+                @media all and (max-width: 376px){
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+                p{
+                    font-size: 20px;
+                    width: 40%;
+                    color: white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .section-button{
+            display: none;
+            @media all and (max-width: 376px){
+                display: grid;
+                justify-self: center;
+                button{
+                    width: 150px;
+                    height: 35px;
+                    text-transform: uppercase;
+                    background-color: white;
+                    color: black;
+                }
+               
+            }
+        }
+    }
+}

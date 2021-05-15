@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+.header{
+    display: grid;
+    grid-template-rows: 150px 500px;
+    font-family: 'Alata';
+    @media all and (max-width: 376px){
+        display: grid;
+        grid-template-rows: 130px 700px;
+        background-image: url(/images/mobile/image-hero.jpg);
+    }
+    @media all and (min-width: 376px){
+        background-image: url(/images/desktop/image-hero.jpg);
+    }
+    &__navigation{
+        display: grid;
+        grid-template-columns: 720px 720px;
+        align-items: center;
+        @media all and (max-width: 376px){
+            display: grid;
+            grid-template-columns: 187.5px 187.5px;
+        }
+        &__logo{
+            margin-left: 160px;
+            @media all and (max-width: 376px){
+                margin-left: 25px;
+            }
+        }
+        &__hamburger{
+            display: none;
+            @media all and (max-width: 376px) {
+                display: grid;
+                justify-content: flex-end;
+                    margin-right: 25px;
+                .hamburger{
+                    display: grid;
+                }
+                .close{
+                    display: none;
+                }     
+            }
+        }
+        &__nav{
+            @media all and (max-width: 376px) {
+                display: none;
+            }
+            ul{
+                color: white;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 80px 80px 80px 80px 80px;
+                list-style: none;
+                column-gap: 15px;
+            }   
+        }
+    }
+    &__section{
+        &__box{
+            display: grid;
+            align-items: center;
+            width: 650px;
+            height: 280px;
+            font-size: 80px;
+            text-transform: uppercase;
+            border: 2px solid white;
+            padding: 20px;
+            color: white;
+            margin-left: 160px;
+            margin-top: 80px;
+            line-height: 1;
+            @media all and (max-width: 376px) {
+                margin-left: 25px;
+                margin-right: 25px;
+                width: 325px;
+                height: 200px;
+                font-size: 47px;
+                text-align: start;
+                padding-top: 5px;
+            }
+        }
+        &__menu{
+            display: none;
+            @media all and (max-width: 376px){
+                color: white;
+                margin-top: 140px;
+                margin-left: 25px;
+                ul{
+                    line-height: 2.5;
+                    li{
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
