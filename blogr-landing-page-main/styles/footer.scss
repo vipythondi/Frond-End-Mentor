@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+.footer{
+    background-color: #24242C;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    grid-template-columns: 440px 330px 330px 330px;
+    padding-top: 70px;
+    border-top-right-radius: 100px;
+    @media only screen and (max-device-width: 375px){
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 150px 225px 205px 255px;
+        padding-top: 0px;
+    }
+    &__logo{
+        justify-self: center;
+        @media only screen and (max-device-width: 375px){
+            justify-self: center;
+            align-self: center;
+        }
+    }
+    &__product{
+        justify-self: start;
+        @media only screen and (max-device-width: 375px){
+            display: grid;
+            grid-template-rows: 60px 165px;
+            grid-template-columns: 375px;
+        }
+        p{
+            padding-bottom: 40px;
+            margin-top: 10px;
+            @media only screen and (max-device-width: 375px){
+                justify-self: center;
+                align-self: center;
+                margin-top: 0px;
+                padding-bottom: 0px;
+            }
+        }
+        ul{
+            color: #AFB2C5;
+            @media only screen and (max-device-width: 375px){
+                    align-self: center;
+                    text-align: center;
+                    
+            }
+            li{
+                list-style: none;
+                line-height: 2;
+            }
+        }
+    }
+    &__company{
+        justify-self: start;
+        @media only screen and (max-device-width: 375px){
+            display: grid;
+            grid-template-rows: 65px 140px;
+            grid-template-columns: 375px;
+        }
+        p{
+            padding-bottom: 40px;
+            margin-top: 10px;
+            justify-self: center;
+            align-self: center;
+            @media only screen and (max-device-width: 375px){
+                justify-self: center;
+                align-self: center;
+                margin-top: 0px;
+                padding-bottom: 0px;
+            }
+        }
+        ul{
+            color: #AFB2C5;
+            @media only screen and (max-device-width: 375px){
+                align-self: center;
+                text-align: center;
+                
+
+            }
+            li{
+                list-style: none;
+                line-height: 2;
+            }
+        }
+    }
+    &__connect{
+        justify-self: start;
+        @media only screen and (max-device-width: 375px){
+            display: grid;
+            grid-template-rows: 60px 185px;
+            grid-template-columns: 375px;
+            justify-content: center;
+
+        }
+        p{
+            padding-bottom: 40px;
+            margin-top: 10px;
+            @media only screen and (max-device-width: 375px){
+                justify-self: center;
+                align-self: center;
+                padding-bottom: 0px;
+                margin-top: 0px;
+            }
+        }
+        ul{
+            color: #AFB2C5;
+            @media only screen and (max-device-width: 375px){
+                text-align: center;
+                justify-self: center;
+                align-self: flex-start;
+               
+            }
+            li{
+                list-style: none;
+                line-height: 2;
+            }
+        }
+    }
+}

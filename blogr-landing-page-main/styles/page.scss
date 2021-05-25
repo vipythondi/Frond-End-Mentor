@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1440px;
+    grid-template-rows: 600px 1fr 360px;
+    background: #FAFAFA;
+    @media only screen and (max-device-width: 375px){
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 525px 1fr 840px;
+    }
+}

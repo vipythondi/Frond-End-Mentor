@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1440px;
+      grid-template-columns: 1440px;
+  -ms-grid-rows: 600px 1fr 360px;
+      grid-template-rows: 600px 1fr 360px;
+  background: #FAFAFA;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+    -ms-grid-rows: 525px 1fr 840px;
+        grid-template-rows: 525px 1fr 840px;
+  }
+}
+/*# sourceMappingURL=page.css.map */

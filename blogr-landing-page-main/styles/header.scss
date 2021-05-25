@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+
+.header{
+    display: grid;
+    grid-template-rows: 150px 450px;
+    grid-template-columns: 720px 720px;
+    font-family: 'Overpass', sans-serif;
+    background: linear-gradient(to right, #ff8f70 20%, #ff3d54 80%);
+    color: white;
+    border-bottom-left-radius: 100px;
+    @media only screen and (max-device-width: 375px){
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 125px 400px;
+    }
+    &__navigation{
+        display: grid;
+        grid-template-columns: 335px 385px;
+        @media only screen and (max-device-width: 375px){
+            display: grid;
+            grid-template-columns: 187.5px 187.5px;
+        }
+        &__logo{
+            padding-left: 160px;
+            align-self: center;
+            @media only screen and (max-device-width: 375px){
+                padding-left: 20px;
+            }
+        }
+        &__items{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 100px 100px 100px;
+            column-gap: 35px;
+            @media only screen and (max-device-width: 375px){
+                display: none;
+            }
+            .product{
+                &__name{
+                    span{
+                        margin-right: 5px;
+                    }
+                }
+                &__menu{
+                    display: none;
+                }
+            }
+            .product:hover{
+                display: flex;
+                flex-direction: column;
+                .product__name{
+                    span{
+                        border-bottom: 1px solid white;
+                    }
+                    img{
+                        transform: rotate(180deg);
+                    }
+                }
+                .product__menu{
+                    width: 165px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    color: hsl(237, 23%, 32%);
+                    position: absolute;
+                    top: 100px;
+                    list-style: none;
+                    line-height: 2;
+                    padding: 20px;
+                }
+            }
+            .company{
+                &__name{
+                    span{
+                        margin-right: 5px;
+                    }
+                }
+                &__menu{
+                    display: none;
+                }
+            }
+            .company:hover{
+                display: flex;
+                flex-direction: column;
+                .company__name{
+                    span{
+                        border-bottom: 1px solid white;
+                    }
+                    img{
+                        transform: rotate(180deg);
+                    }
+                }
+                .company__menu{
+                    width: 165px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    color: hsl(237, 23%, 32%);
+                    position: absolute;
+                    top: 100px;
+                    list-style: none;
+                    line-height: 2;
+                    padding: 20px;
+                }
+            }
+            .connect{
+                &__name{
+                    span{
+                        margin-right: 5px;
+                    }
+                }
+                &__menu{
+                    display: none;
+                }
+            }
+            .connect:hover{
+                display: flex;
+                flex-direction: column;
+                .connect__name{
+                    span{
+                        border-bottom: 1px solid white;
+                    }
+                    img{
+                        transform: rotate(180deg);
+                    }
+                }
+                .connect__menu{
+                    width: 165px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    color: hsl(237, 23%, 32%);
+                    position: absolute;
+                    top: 100px;
+                    list-style: none;
+                    line-height: 2;
+                    padding: 20px;
+                }
+            }
+        }
+        .hamburger{
+            display: none;
+            @media only screen and (max-device-width: 375px){
+                display: grid;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 20px;
+                .close{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__buttons{
+        display: grid;
+        align-items: center;
+        justify-content: flex-end;
+        @media only screen and (max-device-width: 375px){
+            display: none;
+        }
+        .desktop{
+            button{
+                width: 140px;
+                height: 45px;
+                border-radius: 40px;
+                border: none;
+                margin-left: 30px;
+                margin-right: 160px;
+                color: #FF545D;
+                font-weight: bold;
+            }
+        }
+    }
+    &__content{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1440px;
+        grid-template-rows: 200px 250px;
+        @media only screen and (max-device-width: 375px){
+            display: grid;
+            grid-template-columns: 375px;
+            grid-template-rows: 200px 200px;
+        }
+        &__title{
+            justify-self: center;
+            width: 800px;
+            text-align: center;
+            @media only screen and (max-device-width: 375px){
+                width: 260px;
+                align-items: flex-start;
+            }
+            h1{
+                margin-bottom: 30px;
+                font-size: 50px;
+                @media only screen and (max-device-width: 375px){
+                    font-size: 29px;
+                }
+           }
+        }
+        &__buttons{
+            align-self: flex-start;
+            justify-self: center;
+            @media only screen and (max-device-width: 375px){
+                padding-top: 20px;
+            }
+            .start{
+                width: 140px;
+                height: 45px;
+                border-radius: 40px;
+                border: none;
+                margin-left: 10px;
+                color: #FF545D;
+                font-weight: bold;
+            }
+            .learn{
+                width: 140px;
+                height: 45px;
+                border-radius: 40px;
+                border: 1px solid white;
+                margin-left: 10px;
+                color: white;
+                font-weight: bold;
+                background: transparent;
+            }
+        }
+    }
+    .hamburger__menu{
+        display: none;
+    }
+    .show{
+        display: grid;
+        grid-template-rows: 200px 150px;
+        margin-left: 20px;
+        width: 335px;
+        background-color: white;
+        color: black;
+        line-height: 3;
+        padding: 20px;
+        border-radius: 5px;
+        .hamburger__menu__items{
+            display: grid;
+            justify-content: center;
+        }
+        .product{
+            padding-top: 10px;
+            justify-self: center;
+            &__name{
+                span{
+                    margin-right: 5px;
+                    font-weight: bold;
+                }
+            }
+            &__menu{
+                display: none;
+            }
+        }
+        .company{
+            justify-self: center;
+            &__name{
+                span{
+                    margin-right: 5px;
+                    font-weight: bold;
+                }
+            }
+            &__menu{
+                display: none;
+            }
+        }
+        .connect{
+            justify-self: center;
+            &__name{
+                span{
+                    margin-right: 5px;
+                    font-weight: bold;
+                }
+            }
+            &__menu{
+                display: none;
+            }
+        }
+    }
+    .hamburger__menu__buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid gray;
+        button{
+            width: 140px;
+            height: 45px;
+            border-radius: 40px;
+            border: none;
+            margin-left: 10px;
+            color: white;
+            background: #FF545D;
+            font-weight: bold;
+        }
+    }
+}

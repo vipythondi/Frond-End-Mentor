@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+.footer {
+  background-color: #24242C;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 440px 330px 330px 330px;
+      grid-template-columns: 440px 330px 330px 330px;
+  padding-top: 70px;
+  border-top-right-radius: 100px;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+    -ms-grid-rows: 150px 225px 205px 255px;
+        grid-template-rows: 150px 225px 205px 255px;
+    padding-top: 0px;
+  }
+}
+
+.footer__logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__logo {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.footer__product {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 60px 165px;
+        grid-template-rows: 60px 165px;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+  }
+}
+
+.footer__product p {
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__product p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.footer__product ul {
+  color: #AFB2C5;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__product ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+}
+
+.footer__product ul li {
+  list-style: none;
+  line-height: 2;
+}
+
+.footer__company {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__company {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 65px 140px;
+        grid-template-rows: 65px 140px;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+  }
+}
+
+.footer__company p {
+  padding-bottom: 40px;
+  margin-top: 10px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__company p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.footer__company ul {
+  color: #AFB2C5;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__company ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+}
+
+.footer__company ul li {
+  list-style: none;
+  line-height: 2;
+}
+
+.footer__connect {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__connect {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 60px 185px;
+        grid-template-rows: 60px 185px;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__connect p {
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__connect p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+.footer__connect ul {
+  color: #AFB2C5;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .footer__connect ul {
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.footer__connect ul li {
+  list-style: none;
+  line-height: 2;
+}
+/*# sourceMappingURL=footer.css.map */
