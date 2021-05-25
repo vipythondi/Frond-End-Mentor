@@ -1,0 +1,145 @@
+.header{
+    display: grid;
+    grid-template-columns: 540px;
+    grid-template-rows: 75px 155px;
+    @media only screen and (max-device-width: 375px){
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 100px 115px;
+    }
+    &__theme{
+        display: grid;
+        grid-template-columns: 270px 270px;
+        @media only screen and (max-device-width: 375px){
+            display: grid;
+            grid-template-columns: 187.5px 187.5px;
+        }
+        &__name{
+            align-self: center;
+            h3{
+                color: white;  
+                font-size: 30px;
+                @media only screen and (max-device-width: 375px){
+                    padding-left: 20px;
+                }
+            }
+        }
+        &__button{
+            display: grid;
+            grid-template-columns: 175px 95px;
+            @media only screen and (max-device-width: 375px){
+                display: grid;
+                grid-template-columns: 73.5px 113.5px;
+            }
+            &__theme{
+                justify-self: end;
+                align-self: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+            &__switch{
+                justify-self: end;
+                padding-top: 7px;
+                @media only screen and (max-device-width: 375px){
+                    padding-right: 20px;
+                    padding-top: 20px;
+                }
+                &__numbers{
+                    color: white;
+                    display: grid;
+                    grid-template-columns: 22px 22px 22px;
+                    padding-bottom: 3px;
+                    .one{
+                        font-size: 13px;
+                        justify-self: center;
+                    }
+                    .two{
+                        font-size: 13px;
+                        justify-self: center;
+                    }
+                    .three{
+                        font-size: 13px;
+                        justify-self: center;
+                    }
+                }
+                &__slider{
+                    height: 20px;
+                    width: 65px;
+                    border: 1px solid white;
+                    background:hsl(223, 31%, 20%);
+                    border-radius: 10px;
+                    border: none;
+                    padding-top: 2.5px;
+                    position: relative;
+                    .point{
+                        height: 15px;
+                        width: 15px;
+                        background:  hsl(6, 70%, 34%);
+                        margin-left: 5px;
+                        padding-bottom: 3px;
+                        border-radius: 50px;
+                    }
+                    .checks{
+                        position: relative;
+                        bottom: 16px;
+                        .one_checked{
+                            background-color: transparent;
+                            padding-left: 7px;
+                            padding-right: 7px;
+                            margin: 4px;
+                        }
+                        .two_checked{
+                            background-color: transparent;
+                            padding-left: 7px;
+                            padding-right: 7px;
+                            margin: 4px;
+                        }
+                        .three_checked{
+                            background-color: transparent;
+                            padding-left: 7px;
+                            padding-right: 7px;
+                            margin: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__result{
+        align-self: center;
+        @media only screen and (max-device-width: 375px){
+            justify-self: center;
+            align-self: flex-start;
+        }
+        &__board{
+            width: 540px;
+            height: 125px;
+            border: 1px solid white;
+            display: grid;
+            grid-template-columns: 540px;
+            align-items: center;
+            border-radius: 8px;
+            border: none;
+            background:  hsl(224, 36%, 15%);
+            @media only screen and (max-device-width: 375px){
+                width: 335px;
+                height: 85px;
+                display: grid;
+                grid-template-columns: 335px;
+            }
+            &__number{
+                justify-self: flex-end;
+                color: white;
+                padding-right: 35px;
+                font-size: 25px;
+                @media only screen and (max-device-width: 375px){
+                    font-size: 13px;
+                    width: 130px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    
+}
